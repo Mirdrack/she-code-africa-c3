@@ -1,0 +1,8 @@
+Created a Dockerfile and index.html file in the same directory
+  Dockerfile
+  FROM Nginx:latest
+  COPY ./index.html /usr/share/nginx/index.html
+  
+-build an image with the name "webserver" from the docker file : docker build -t webserver .
+
+-to run the container  and make it accesible locally: docker run --name newcon -d -p 8080:80 webserver
